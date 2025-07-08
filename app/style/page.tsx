@@ -27,7 +27,7 @@ export default function StylePage() {
         <div className="flex flex-col items-center p-10 space-y-4">
             <img
                 ref={imgRef}
-                src="/example.jpg"
+                src="/image.jpg"
                 alt="To style"
                 className="rounded shadow"
                 style={{ filter }}

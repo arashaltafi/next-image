@@ -9,7 +9,7 @@ export default function QualityPage() {
     return (
         <div className="flex flex-col items-center p-10 space-y-4">
             <Image
-                src="/example.jpg"
+                src="/image.jpg"
                 alt="Quality Control"
                 width={600}
                 height={400}
@@ -18,7 +18,7 @@ export default function QualityPage() {
             />
             <a
                 ref={ref}
-                href="/example.jpg?q=30"
+                href="/image.jpg?q=10"
                 download="image-q30.jpg"
                 className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
             >

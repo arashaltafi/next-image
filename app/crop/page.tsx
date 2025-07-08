@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback } from "react";
 import Cropper, { Area } from "react-easy-crop";
-import getCroppedImg from "./getCroppedImg";
+import getCroppedImg from "../getCroppedImg";
 
 export default function CropPage() {
     const [crop, setCrop] = useState({ x: 0, y: 0 });
@@ -16,7 +16,7 @@ export default function CropPage() {
 
     const download = useCallback(async () => {
         if (!area) return;
-        const blob = await getCroppedImg("/example.jpg", area);
+        const blob = await getCroppedImg("/image.jpg", area);
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);
         a.download = "cropped.jpg";
@@ -27,7 +27,7 @@ export default function CropPage() {
         <div className="flex flex-col items-center p-10 space-y-4">
             <div className="relative w-80 h-80 bg-gray-200">
                 <Cropper
-                    image="/example.jpg"
+                    image="/image.jpg"
                     crop={crop}
                     zoom={zoom}
                     aspect={4 / 3}

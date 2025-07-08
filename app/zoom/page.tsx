@@ -8,7 +8,7 @@ export default function ZoomPage() {
         <div className="flex justify-center p-10">
             <Zoom>
                 <img
-                    src="/example.jpg"
+                    src="/image.jpg"
                     alt="Zoomable"
                     className="max-w-full h-auto rounded-lg shadow"
                 />
