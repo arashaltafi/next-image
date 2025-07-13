@@ -1,18 +1,13 @@
-"use client";
+import Link from "next/link"
 
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
-
-export default function ZoomPage() {
+const ZoomPage = () => {
     return (
-        <div className="flex justify-center p-10">
-            <Zoom>
-                <img
-                    src="/image.jpg"
-                    alt="Zoomable"
-                    className="max-w-full h-auto rounded-lg shadow"
-                />
-            </Zoom>
+        <div className='flex flex-col gap-12 items-center justify-center w-full min-h-screen'>
+            <Link href='/zoom/sample1' className='text-3xl text-center'>Sample 1</Link>
+            <Link href='/zoom/sample2' className='text-3xl text-center'>Sample 2</Link>
+            <Link href='/zoom/sample3' className='text-3xl text-center'>Sample 3</Link>
         </div>
-    );
+    )
 }
+
+export default ZoomPage
