@@ -6,6 +6,7 @@ const ZoomPage = () => {
             <Link href='/zoom/sample1' className='text-3xl text-center'>Sample 1</Link>
             <Link href='/zoom/sample2' className='text-3xl text-center'>Sample 2</Link>
             <Link href='/zoom/sample3' className='text-3xl text-center'>Sample 3</Link>
+            <Link href='/zoom/sample4' className='text-3xl text-center'>Sample 4</Link>
         </div>
     )
 }
