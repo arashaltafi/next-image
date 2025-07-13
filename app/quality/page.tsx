@@ -41,8 +41,8 @@ export default function ImageQualityPage() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center space-y-6 p-6 bg-gray-50">
-            <h1 className="text-2xl font-semibold">Adjust Image Quality</h1>
+        <div className="min-h-screen flex flex-col gap-8 items-center justify-center space-y-6 p-6 bg-gray-400">
+            <h1 className="text-2xl font-semibold text-black">Adjust Image Quality</h1>
 
             <div>
                 <img
@@ -53,7 +53,7 @@ export default function ImageQualityPage() {
                 />
             </div>
 
-            <div className="w-full max-w-md flex items-center space-x-3">
+            <div className="w-full max-w-md flex items-center space-x-3 text-black">
                 <label htmlFor="quality" className="font-medium">
                     Quality: {quality}%
                 </label>
