@@ -34,7 +34,7 @@ export default async function getCroppedImg(
     rotation = 0,
     flip = { horizontal: false, vertical: false }
 ) {
-    const image = await createImage(imageSrc)
+    const image: any = await createImage(imageSrc)
     const canvas = document.createElement('canvas')
     const ctx = canvas.getContext('2d')
 
